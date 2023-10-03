@@ -1,3 +1,17 @@
+This project implements a Generative Adversarial Network (GAN) to generate synthetic images of handwritten digits from the MNIST dataset. The GAN is trained to produce realistic digit images that closely resemble the real data. These generated images can be useful for data augmentation, image synthesis, and various computer vision tasks.
+
+Usage:
+
+Run the provided code in a Python environment (e.g., Google Colab) with GPU support for faster training.
+The GAN will be trained for a specified number of epochs (100 epochs by default).
+After training, the code will generate a set of synthetic digit images and save them as PNG files.
+You can view the generated images to observe the GAN's performance.
+Dependencies:
+
+Python 3.x
+TensorFlow 2.x
+NumPy
+Matplotlib
 1. **Data Loading:** It loads the MNIST dataset, which consists of 28x28 grayscale images of handwritten digits (0 through 9). The dataset is preprocessed and normalized to be within the range [-1, 1].
 
 2. **Generator and Discriminator Models:** It defines two neural network models:
